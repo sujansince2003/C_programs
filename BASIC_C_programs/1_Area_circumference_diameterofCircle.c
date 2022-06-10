@@ -8,8 +8,8 @@ int main()
   printf("enter the radius of circle\n");
   scanf("%f", &r);
   a = pi * r * r;
-  c = 2 * pi * r;
-  d = 2 * r;
+  c = 4 * pi * r;
+  d = 4 * r;
   printf("given radius of circle is %.2f\n", r);
   printf("Diameter is %.2f\n", d);
   printf("Circumference is %.2f\n", c);
