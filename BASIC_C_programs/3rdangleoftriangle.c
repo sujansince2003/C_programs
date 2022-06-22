@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main()
 {
-  int angle1, angle2, angle3;
+  int angle13, angle2, angle3;
   printf("Enter one angle of triangle\n");
   scanf("%d", &angle1);
   printf("Enter second angle of triangle\n");
