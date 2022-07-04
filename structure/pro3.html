@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-color: rgb(214, 233, 250);
+    }
+    .main {
+        display: flex;
+        width: 80%;
+        box-shadow: 5px 4px 10px lightgray;
+        margin: auto;
+        border: 1px;
+    }
+    
+    .info {
+        background-color: white;
+        height: 650px;
+        width: 50%;
+        box-shadow: 5px 4px 10px rgb(83, 32, 32);
+        margin: 5px;
+        border-radius: 8px;
+    }
+    
+    .contact {
+        background-color: rgb(51, 51, 188);
+        margin: 1px;
+        color: white;
+        height: 650px;
+        width: 50%;
+        margin: 5px;
+    
+        box-shadow: 5px 4px 10px rgb(83, 32, 32);
+        border-radius: 8px;
+    }
+    
+    .d1 {
+        color:blue;
+        font-size: 35px;
+        padding-left: 60px;
+        padding-top: 50px;
+    }
+    
+    .c1 {
+        color: white;
+        font-size: 35px;
+        padding-left: 60px;
+        padding-top: 50px;
+    }
+    
+    .d2 {
+        padding-left: 60px;
+        width: 80%;
+    }
+    
+    select[id="title"] {
+        width: 470px;
+        padding-top: 10px;
+        margin: 30px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid rgb(184, 182, 182);
+    }
+    
+    .d3 {
+        display: flex;
+        margin: auto;
+    }
+    
+    .d31 {
+        border: none;
+        box-sizing: border-box;
+        width: 199px;
+        border-bottom: 2px solid rgb(184, 182, 182);
+        margin-left: 60px;
+        padding-right: 20px;
+    }
+    
+    .d32 {
+        border: none;
+        box-sizing: border-box;
+        width: 227px;
+        border-bottom: 2px solid rgb(184, 182, 182);
+        margin-left: 40px;
+    }
+    
+    select[id="position"] {
+        width: 470px;
+        padding-top: 10px;
+        margin: 30px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid rgb(184, 182, 182);
+        margin-left: 60px;
+    }
+    
+    .d33 {
+        width: 470px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid rgb(184, 182, 182);
+        margin-left: 60px;
+    }
+    
+    .d41 {
+        border: none;
+        box-sizing: border-box;
+        width: 199px;
+        border-bottom: 2px solid rgb(184, 182, 182);
+        margin-left: 60px;
+    }
+    
+    .d4 {
+        display: flex;
+    }
+    
+    select[id="business"] {
+        width: 235px;
+        padding-top: 10px;
+        margin: 30px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid rgb(184, 182, 182);
+        margin-left: 30px;
+    }
+    /* :-ms-input-placeholder { */
+    /* color: white; */
+    /* } */
+    /* ::-webkit-input-placeholder { */
+    /* color: white; */
+    /* } */
+    
+    .c11 {
+        background-color: rgb(51, 51, 188);
+        border: none;
+        box-sizing: border-box;
+        width: 470px;
+        border-bottom: 2px solid rgb(184, 182, 182);
+        margin-left: 60px;
+        color: white;
+        margin-top: 40px;
+    }
+    
+    .c12 {
+        background-color: rgb(51, 51, 188);
+        border: none;
+        box-sizing: border-box;
+        width: 470px;
+        border-bottom: 2px solid rgb(184, 182, 182);
+        margin-left: 60px;
+        color: white;
+        margin-top: 30px;
+    }
+    
+    .c11::placeholder {
+        color: rgb(215, 212, 212);
+    }
+    
+    .c12::placeholder {
+        color: rgb(215, 212, 212);
+    }
+    
+    .c4 {
+        display: flex;
+        margin-left: 60px;
+    }
+    
+    .c41 {
+        background-color: rgb(51, 51, 188);
+        border: none;
+        border-bottom: 2px solid rgb(184, 182, 182);
+        margin-top: 40px;
+        color: white;
+    }
+    
+    .c41::placeholder {
+        color: rgb(215, 212, 212);
+    }
+    
+    select[id="place"] {
+        border: none;
+        border-bottom: 2px solid rgb(184, 182, 182);
+        background-color: rgb(51, 51, 188);
+        margin-left: 30px;
+        width: 291px;
+        text-align: bottom;
+        color: white;
+        padding-top: 40px;
+    }
+    
+    .c5 {
+        background-color: rgb(51, 51, 188);
+        border: none;
+        box-sizing: border-box;
+        width: 470px;
+        border-bottom: 2px solid rgb(184, 182, 182);
+        margin-left: 60px;
+        color: white;
+        margin-top: 30px;
+    }
+    
+    .c5::placeholder {
+        color: rgb(215, 212, 212);
+    }
+    
+    .c6 {
+        display: flex;
+    }
+    
+    .c61 {
+        background-color: rgb(51, 51, 188);
+        border: none;
+        border-bottom: 2px solid rgb(184, 182, 182);
+        margin-top: 40px;
+        margin-left: 60px;
+        color: white;
+    }
+    
+    .c61::placeholder {
+        color: rgb(215, 212, 212);
+    }
+    
+    .c62 {
+        border: none;
+        border-bottom: 2px solid rgb(184, 182, 182);
+        background-color: rgb(51, 51, 188);
+        margin-left: 30px;
+        width: 283px;
+        text-align: bottom;
+        color: white;
+    }
+    
+    .c62::placeholder {
+        color: rgb(215, 212, 212);
+    }
+    
+    .c7 {
+        background-color: rgb(51, 51, 188);
+        border: none;
+        box-sizing: border-box;
+        width: 470px;
+        border-bottom: 2px solid rgb(184, 182, 182);
+        margin-left: 60px;
+        color: white;
+        margin-top: 30px;
+    }
+    
+    .c7::placeholder {
+        color: rgb(215, 212, 212);
+    }
+    
+    .c8 {
+        color: white;
+        background-color: rgb(51, 51, 188);
+        position: absolute;
+        top: 450px;
+        margin-left: 60px;
+    }
+    
+    .c81 {
+        color: white;
+    }
+    
+    .c9 {
+        position: absolute;
+        top: 500px;
+        border: 3px solid white;
+        color: black;
+        text-decoration: none;
+   
+        border-radius: 10px;
+        background-color: aliceblue;
+        padding: 3px;
+        margin-left: 60px;
+    }
+     .c9:hover{
+        background-color:rgb(248, 211, 211) ;
+        text-decoration: none;
+        border: 3px solid rgb(143, 143, 56);
+    }
+    .checkbox{
+    background-color: blue;
+
+    }
+</style> 
+</head>
+
+<body>
+    <div class="main">
+        <div class="info">
+            <div class="d1">
+                General Information
+            </div>
+            <form>
+                <div class="d2">
+                    <select id="title" name="Title" placeholder="Title">
+                        <option class="pro" value="" disabled selected hidden>Title</option>
+                        <option value="in" >Information of Myself </option>
+                        <option value="inf">Other</option>
+                    </select>
+                </div>
+                <div d3>
+
+                    <input type="text" placeholder="First Name" class="d31">
+
+
+                    <input type="text" placeholder="Last Name" class="d32">
+
+                </div>
+                <select id="position" name="position" placeholder="position">
+                    <option class="pro" value="" disabled selected hidden>Position</option>
+                    <option value="in" >Chairman </option>
+                    <option value="inf">Chief Executive Officer(CEO)</option>
+                    <option value="in" >General Manager</option>
+                    <option value="in" >Administrative Professionals</option>
+                    <option value="in" >Marketing Officials</option>
+                    <option value="in" >Technical Officials</option>
+                    <option value="in" >Human Resource Officials</option>
+                    <option value="in" >Sales Official</option>
+                </select>
+                <input type="text" placeholder="Company" class="d33">
+                <div d4>
+
+                    <input type="text" placeholder="Business Arena" class="d41">
+
+                    <select id="business" name="business">
+                        <option class="pro" value="" disabled selected hidden>Employees</option>
+                        <option value="in" >Below 10</option>
+                        <option value="inf">Below 20 and above 10</option>
+                        <option value="inf">Below 30 and above 20 </option>
+                        <option value="inf">Below 40 and above 30</option>
+                        <option value="inf">Below 50 and above 40</option>
+                        <option value="inf">Below 60 and above 50</option>
+                        <option value="inf">Below 70 and above 60</option>
+                        <option value="inf">Above 70 </option>
+
+                    </select>
+                </div>
+
+            </form>
+        </div>
+        <div class="contact">
+            <div class="c1">
+                Contact Details
+            </div>
+            <div>
+                <input type="text" placeholder="Street +Nr" class="c11">
+            </div>
+            <div>
+                <input type="text" placeholder="Additional Information" class="c12">
+            </div>
+            <div class="c4">
+                <input type="text" placeholder="Zip Code" class="c41" />
+                <select id="place" name="place" aria-placeholder="province">
+                    <option class="pro" value="" disabled selected hidden>Province</option>
+                    
+                   <option>Lumbini</option>
+                   <option>Gandaki Pradesh</option>
+                   <option>Province No. 1</option>
+                   <option>Province No. 2</option>
+                   <option>Province No. 3</option>
+                   <option>Karnali Pradesh</option>
+                   <option>Sudurpashchim Pradesh</option>
+               </select>
+            </div>
+            <input type="text" placeholder="Country" class="c5" />
+            <div class="d6">
+                <input type="text" placeholder="Code+" class="c61">
+                <input type="text" placeholder="Phone Number" class="c62">
+            </div>
+            <input type="text" placeholder="Your Email" class="c7">
+            <div class="c8">
+                <input type="checkbox" class="checkbox" /> I do accept the <a class="c81" href="https://policies.google.com/terms?hl=en-US">Terms and Conditions</a> of your site
+            </div>
+            <div >
+                <a class="c9" href="https://www.register.com/"><b>Register Badge</b></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
